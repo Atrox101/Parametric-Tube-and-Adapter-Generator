@@ -1,27 +1,32 @@
-# Parametrische Staubsauger-Aufsätze (OpenSCAD)
+# Parametric Tube & Adapter Generator
 
-OpenSCAD-Module für Staubsauger-Aufsätze (Adapter, Fugendüse, Flachdüse).  
-Alle Maße sind parametrisierbar.
+Ein parametrischer OpenSCAD-Generator für Rohradapter, Schlauchverbinder, Übergangsstücke und einfache technische Verbindungsteile.
 
-## Features
-- **Adapter:** verbindet unterschiedliche Rohrdurchmesser
-- **Fugendüse:** Länge, Wandstärke, Endwinkel parametrisierbar
-- **Flachdüse:** Breite, Länge, Winkel einstellbar
+Das Projekt ist entstanden, um schnell individuelle Adapter für 3D-Druck-Anwendungen zu erstellen, ohne jedes Teil komplett neu modellieren zu müssen.
 
-## Verwendung
-1. OpenSCAD öffnen
-2. `src/attachments.scad` laden
-3. Oben den gewünschten Aufsatz wählen:
-   ```scad
-   aufsatz_typ = "fugen_duese"; // "adapter", "flach_duese"
-   ```
-4. Parameter anpassen (Durchmesser, Länge, Wandstärke, Winkel)
-5. Rendern (`F6`) und als STL exportieren
+## Funktionen
 
-## Ordner
-- `src/attachments.scad` – Quellcode
-- `examples/` – Platz für exportierte STL-Beispiele
-- `docs/images/` – Screenshots / Renderbilder
+* Frei einstellbare Innen- und Außendurchmesser
+* Gerade oder konische Adapterformen
+* Anpassbare Länge
+* Einstellbare Wandstärke
+* Geeignet für Rohr-, Schlauch- und Geräteanschlüsse
+* Parametrischer Aufbau in OpenSCAD
+* Export als STL für den 3D-Druck
 
-## Lizenz
-MIT License
+## Mögliche Anwendungen
+
+* Staubsaugeradapter
+* Schlauchverbinder
+* Rohrübergänge
+* Werkstattadapter
+* Prototypen für technische Anschlüsse
+* Individuelle Ersatz- oder Verbindungsteile
+
+## Ziel des Projekts
+
+Der Generator soll einfache technische Adapter schnell anpassbar machen. Statt jedes Teil neu zu zeichnen, können Maße direkt im OpenSCAD-Skript geändert und anschließend als STL exportiert werden.
+
+## Status
+
+Das Projekt befindet sich noch in Weiterentwicklung. Weitere Funktionen, Beispiele und Dokumentation folgen.
