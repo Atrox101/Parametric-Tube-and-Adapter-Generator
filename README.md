@@ -1,32 +1,55 @@
 # Parametric Tube & Adapter Generator
 
-Ein parametrischer OpenSCAD-Generator für Rohradapter, Schlauchverbinder, Übergangsstücke und einfache technische Verbindungsteile.
+Ein parametrischer OpenSCAD-Generator für Rohradapter, Schlauchverbinder, Reduzierungen und andere technische Verbindungsteile.
 
-Das Projekt ist entstanden, um schnell individuelle Adapter für 3D-Druck-Anwendungen zu erstellen, ohne jedes Teil komplett neu modellieren zu müssen.
+Dieses Projekt wurde entwickelt, um individuelle Adapter schnell und einfach zu erstellen, ohne jedes Modell neu konstruieren zu müssen. Alle wichtigen Maße können direkt über Parameter in OpenSCAD angepasst werden.
 
 ## Funktionen
 
-* Frei einstellbare Innen- und Außendurchmesser
-* Gerade oder konische Adapterformen
-* Anpassbare Länge
-* Einstellbare Wandstärke
-* Geeignet für Rohr-, Schlauch- und Geräteanschlüsse
-* Parametrischer Aufbau in OpenSCAD
-* Export als STL für den 3D-Druck
+* Einstellbarer Durchmesser A und Durchmesser B
+* Gerade und konische Adapter
+* Anpassbare Wandstärke
+* Frei wählbare Länge
+* Vollständig parametrischer Aufbau
+* STL-Export für den 3D-Druck
+* Geeignet für funktionale Bauteile und Prototypen
 
-## Mögliche Anwendungen
+## Durchmesser A und B
+
+Der **Durchmesser A** befindet sich immer auf der Unterseite des Adapters.
+
+Der **Durchmesser B** befindet sich immer auf der Oberseite des Adapters.
+
+Dadurch lassen sich Übergänge zwischen unterschiedlichen Rohr-, Schlauch- oder Anschlussdurchmessern einfach erzeugen.
+
+![Durchmesser A und B](diameter-a-b-explanation.png)
+
+### Beispiel
+
+* Durchmesser A = 35 mm
+* Durchmesser B = 50 mm
+* Länge = 60 mm
+
+Ergebnis: Ein konischer Adapter von 35 mm auf 50 mm.
+
+## Mögliche Anwendungsbereiche
 
 * Staubsaugeradapter
 * Schlauchverbinder
-* Rohrübergänge
-* Werkstattadapter
-* Prototypen für technische Anschlüsse
-* Individuelle Ersatz- oder Verbindungsteile
+* Rohrreduzierungen
+* Werkstatt- und Maschinenanschlüsse
+* Technische Prototypen
+* Individuelle Ersatzteile
+* Allgemeine Rohr- und Verbindungssysteme
 
-## Ziel des Projekts
+## Verwendete Software
 
-Der Generator soll einfache technische Adapter schnell anpassbar machen. Statt jedes Teil neu zu zeichnen, können Maße direkt im OpenSCAD-Skript geändert und anschließend als STL exportiert werden.
+* OpenSCAD
 
-## Status
+## Projektstatus
 
-Das Projekt befindet sich noch in Weiterentwicklung. Weitere Funktionen, Beispiele und Dokumentation folgen.
+Das Projekt wird aktiv weiterentwickelt. Geplant sind zusätzliche Funktionen, weitere Adaptertypen und eine verbesserte Dokumentation.
+
+## Lizenz
+
+MIT License
